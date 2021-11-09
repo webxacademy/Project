@@ -1,0 +1,184 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#title{
+    position: relative;
+    text-align: center;
+    bottom: 0;
+    color: rebeccapurple;
+    background-color: white;
+    padding: 20px 0;
+}
+#main{
+    background:#EEE;
+}
+
+#img-div{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 30px;
+    justify-content: center;
+}
+#img-div img{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    border: white 5px solid;
+    max-height: 450px;
+}
+
+#img-caption{
+    background-color: white;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 20px;
+    width: 100%;
+    color: rebeccapurple;
+}
+
+#tribute-info{
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+#tribute-info>div{
+    width: 45%;
+    background:white;
+}
+
+#time-line, #quotes{
+    background-color: white;
+    padding: 30px 20px;
+}
+
+#time-line h1{
+    text-align: center;
+    color: rebeccapurple;
+}
+
+
+#quotes h1{
+    text-align: center;
+    color: rebeccapurple;
+}
+
+#tribute-info li{
+    list-style: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+    font-size: 25px;
+}
+
+.list-style::before{
+    content: "";
+    width: 50px;
+    height: 50px;
+    background-color: rebeccapurple;
+    border-radius: 50px;
+    display: inline-block;
+}
+.list-style::after{
+    content: "";
+    width: 10px;
+    height: 130px;
+    background-color: rebeccapurple;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    overflow: hidden;
+}
+
+.last::after{
+    width: 0 !important;
+}
+
+.content{
+    display: flex;
+    width: 100% !important;
+    align-items: center;
+    position: relative;
+    margin: 40px 0;
+}
+
+.content>p{
+    width:100%;
+}
+
+.item{
+    padding: 20px 30px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin: 0 22px;
+    position: relative;
+}
+
+.year{
+    position: absolute;
+    font-size: 18px;
+    background: rebeccapurple;
+    color: white;
+    padding: 5px;
+    top: 50%;
+    margin-top: -14px;
+    right: -28px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    font-weight: 500;
+}
+#tribute-link{
+    display: block;
+    width: 100%;
+    background-color: white;
+    margin-top: 20px;
+    text-align: center;
+    padding: 20px 0;
+    text-decoration: none;
+}
+
+
+@media(max-width: 768px){
+    #tribute-info > div{
+        width: 100%;
+    }
+
+    #title>h2{
+        font-size: 18px;
+    }
+
+    #img-div {
+        padding: 20px 10px;
+    }
+    #img-div img {
+        overflow: hidden;
+        max-width: 100%;
+        height: auto;
+    }
+
+    #img-caption{
+        font-size: 13px;
+    }
+    .list-style::after {
+        height: 215px;
+        width: 5px;
+        left: 16px;
+    }
+
+    .list-style::before {
+        content: "";
+        width: 35px;
+        height: 35px;
+    }
+}
