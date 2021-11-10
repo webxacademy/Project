@@ -1,0 +1,9 @@
+<script src="https://kit.fontawesome.com/e4694336a3.js" crossorigin="anonymous"></script>
+
+<i class="fas fa-phone-alt"></i>
+<i class="fas fa-envelope"></i>
+ <i class="fas fa-map-marker-alt"></i>
+
+ <li><a href="http://www.facebook.com"><i class="fab fa-facebook-f"></i></a></li>
+ <li><a href="http://www.facebook.com"><i class="fab fa-twitter"></i></a></li>
+ <li><a href="http://www.facebook.com"><i class="fab fa-linkedin-in"></i></a></li><li><a href="http://www.facebook.com"><i class="fab fa-snapchat-ghost"></i></a></li><li><a href="http://www.facebook.com"><i class="fas fa-paper-plane"></i></a></li>
